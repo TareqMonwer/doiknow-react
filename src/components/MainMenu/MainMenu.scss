@@ -1,0 +1,17 @@
+.main-menu {
+    .left-menu {
+        .menu-item:not(:last-child) {
+            margin-right: 1.4rem;
+        }
+    }
+
+    .right-menu {
+        .menu-item {
+            padding: 0 1.2rem;
+
+            &:not(:last-child) {
+                border-right: .1rem solid rgb(228, 228, 228);
+            }
+        }
+    }
+}

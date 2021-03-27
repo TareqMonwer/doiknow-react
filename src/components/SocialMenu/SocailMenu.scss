@@ -1,0 +1,17 @@
+.social-menu {
+    .socialmedia-links-items {
+        .media-link:not(:last-child) {
+            margin-right: .6rem;
+        }
+    }
+    .contact-items {
+        .contact-item {
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
+            .fws-icon {
+                margin-right: .6rem;
+            }
+        }
+    }
+}
