@@ -14,7 +14,7 @@ const mobileVisibleStyles = {
 const FilterSideBar = (props) => {
     // const [mobileFilterVisible, setMobileFilterVisible] = useState(false);
     const toggleFilter = useSelector(
-        state => state.showFilter
+        state => state.toggleFilter
     );
     const dispatch = useDispatch();
     
