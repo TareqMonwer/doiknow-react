@@ -4,10 +4,10 @@ const MobileProductFilter = () => {
                 mb-5 sm:hidden">
             <span className="text-gray-500 uppercase">
                 Filters
-                    </span>
+            </span>
             <button className="text-yellow-500 uppercase">
                 reset
-                    </button>
+            </button>
         </div>
     );
 }

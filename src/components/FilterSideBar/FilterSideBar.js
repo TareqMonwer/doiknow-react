@@ -1,9 +1,25 @@
+import { useState } from 'react';
 import './FilterSideBar.scss';
 
-const FilterSideBar = () => {
+const mobileVisibleStyles = {
+    position: 'absolute',
+    bottom: 0,
+    height: '90%',
+    width: '100%',
+    zIndex: 50,
+}
+
+const FilterSideBar = (props) => {
+    const [mobileFilterVisible, setMobileFilterVisible] = useState(false);
+
     return (
-        <div className="filter-sidebar filter-sidebar bg-white p-4 border border-gray-100 shadow-md
-            hidden md:block">
+        <div className={`filter-sidebar filter-sidebar bg-white p-4 border border-gray-100 shadow-md
+            ${mobileFilterVisible ? '' : 'hidden'} md:block`}
+            style={
+                mobileFilterVisible ?
+                    mobileVisibleStyles : { display: 'none' }
+            }    
+        >
             <div className="flex justify-between pb-3 border-b border-gray-100">
                 <span className="text-gray-500 uppercase">
                     filters
