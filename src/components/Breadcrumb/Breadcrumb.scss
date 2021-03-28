@@ -1,0 +1,41 @@
+.arrows { 
+    white-space: nowrap; 
+
+    li {
+        display: inline-block;
+        line-height: .8rem;
+        margin: 0 9px 0 -10px;
+        padding: 0 0.8rem;
+        position: relative;
+
+        &::before, &::after {
+            border-right: 1px solid #666666;
+            content: '';
+            display: block;
+            height: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            transform: skewX(45deg); 
+        }
+
+        &::after {
+            bottom: 0;
+            top: auto;
+            transform: skewX(-45deg);
+        }
+
+        &:last-of-type::before,
+        &:last-of-type::after {
+            display: none;
+        }
+
+        a {
+            font: .8rem;
+            text-decoration: none;
+            color: hsl(0, 0%, 70%);
+        }
+    }
+}

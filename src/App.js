@@ -1,8 +1,13 @@
+import React from 'react';
 import Header from './components/Header/Header';
+import MainLayout from './components/Layouts/MainLayout';
 
 function App() {
   return (
-    <Header />
+    <React.Fragment>
+      <Header />
+      <MainLayout />
+    </React.Fragment>
   );
 }
 
