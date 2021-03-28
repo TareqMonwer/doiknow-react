@@ -3,7 +3,7 @@ import './MainMenu.scss';
 const MainMenu = () => {
     return (
         <div className="main-menu w-full py-3 px-5 md:px-2 bg-white border-b border-gray shadow-md">
-            <div className="flex items-center justify-between w-3/4 md:ml-auto md:mr-8">
+            <div className="flex items-center justify-between container mx-auto">
                 <div className="left-menu flex">
                     <div className="menu-item">
                         <a href="#todo">

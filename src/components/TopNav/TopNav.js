@@ -12,8 +12,9 @@ const TopNav = () => {
         <div class="top-nav w-full px-5 sm:p-2 sm:px-0 bg-white shadow-xs
             sm:border-b sm:border-gray-300">
             <div className="container mx-auto flex flex-row items-center justify-between">
-                <div class="text-lg hidden md:flex">
-                    Tail-kit
+                <div class="h-12 hidden md:flex">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/DPI-logo.png" alt=""
+                    className="h-full" />
                 </div>
                 <span class="w-full md:w-1/3 h-10 cursor-pointer border border-gray-300 
                     text-sm rounded-md flex">
