@@ -2,7 +2,8 @@ import './FilterSideBar.scss';
 
 const FilterSideBar = () => {
     return (
-        <div className="filter-sidebar filter-sidebar bg-white p-4 border border-gray-100 shadow-md">
+        <div className="filter-sidebar filter-sidebar bg-white p-4 border border-gray-100 shadow-md
+            hidden md:block">
             <div className="flex justify-between pb-3 border-b border-gray-100">
                 <span className="text-gray-500 uppercase">
                     filters

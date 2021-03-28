@@ -4,7 +4,7 @@ import MobileProductFilter from '../MobileProductFilter/MobileProductFilter';
 
 const HomeLayout = () => {
     return (
-        <div className="container flex pt-3 justify-between">
+        <div className="container flex pt-3 justify-between flex-col md:flex-row">
             <Sidebars />
 
             <div className="main-content w-full px-3 md:w-73p sm:px-0 text-gray-700">
