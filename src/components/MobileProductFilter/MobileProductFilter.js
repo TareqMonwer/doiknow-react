@@ -1,11 +1,18 @@
+import { useDispatch } from 'react-redux';
+import { showFilter } from '../../actions';
+
+
 const MobileProductFilter = () => {
+    const dispatch = useDispatch();
+
     return (
         <div className="m-filter flex justify-between px-5 py-3 bg-gray-50 
-                mb-5 sm:hidden">
-            <span className="text-gray-500 uppercase">
+            mb-5 sm:hidden">
+            <button className="text-gray-500 uppercase focus:outline-none"
+            onClick={() => dispatch(showFilter())}>
                 Filters
-            </span>
-            <button className="text-yellow-500 uppercase">
+            </button>
+            <button className="text-yellow-500 uppercase focus:outline-none">
                 reset
             </button>
         </div>

@@ -1,30 +1,44 @@
 import { useState } from 'react';
 import './FilterSideBar.scss';
+import { useSelector, useDispatch } from 'react-redux';
+import { showFilter, hideFilter } from '../../actions';
 
 const mobileVisibleStyles = {
     position: 'absolute',
     bottom: 0,
-    height: '90%',
+    height: '85%',
     width: '100%',
     zIndex: 50,
 }
 
 const FilterSideBar = (props) => {
-    const [mobileFilterVisible, setMobileFilterVisible] = useState(false);
+    // const [mobileFilterVisible, setMobileFilterVisible] = useState(false);
+    const toggleFilter = useSelector(
+        state => state.showFilter
+    );
+    const dispatch = useDispatch();
+    
+    const handleToggleFilter = () => {
+        if (toggleFilter.mobileFilterVisible) {
+            dispatch(hideFilter());
+        }
+    }
 
     return (
         <div className={`filter-sidebar filter-sidebar bg-white p-4 border border-gray-100 shadow-md
-            ${mobileFilterVisible ? '' : 'hidden'} md:block`}
+            ${toggleFilter.mobileFilterVisible ? '' : 'hidden'} md:block`}
             style={
-                mobileFilterVisible ?
-                    mobileVisibleStyles : { display: 'none' }
+                toggleFilter.mobileFilterVisible ?
+                    mobileVisibleStyles : { display: 'inherit' }
             }    
         >
             <div className="flex justify-between pb-3 border-b border-gray-100">
-                <span className="text-gray-500 uppercase">
+                <button className="text-gray-500 uppercase focus:outline-none"
+                onClick={handleToggleFilter}>
                     filters
-                </span>
-                <button className="text-yellow-500 uppercase">
+                </button>
+                <button className="text-yellow-500 uppercase focus:outline-none"
+                onClick={handleToggleFilter}>
                     reset
                 </button>
             </div>
