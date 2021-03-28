@@ -1,5 +1,6 @@
 import Sidebars from '../Sidebars/Sidebars';
 import Products from '../Products/Products';
+import MobileProductFilter from '../MobileProductFilter/MobileProductFilter';
 
 const HomeLayout = () => {
     return (
@@ -8,20 +9,15 @@ const HomeLayout = () => {
 
             <div className="main-content w-full px-3 md:w-73p sm:px-0 text-gray-700">
 
-                <div className="m-filter flex justify-between px-5 py-3 bg-gray-50 
-                mb-5 sm:hidden">
-                    <span className="text-gray-500 uppercase">
-                        Filters
-                    </span>
-                    <button className="text-yellow-500 uppercase">
-                        reset
-                    </button>
-                </div>
+                {/* Mobile Filter Control */}
+                <MobileProductFilter />
 
+                {/* All Products */}
                 <Products />
 
-                <div className="payment-methods flex justify-center 
-                align-center my-32 hidden md:block">
+                {/* Payment methods */}
+                <div className="payment-methods justify-center 
+                align-center my-32 hidden md:flex">
                     <img className="mr-2" src="https://i.imgur.com/HlheQoO.png" alt="" />
                     <img className="mr-2" src="https://i.imgur.com/DZxNJQZ.png" alt="" />
                     <img className="mr-2" src="https://i.imgur.com/CdZ3Ka0.png" alt="" />

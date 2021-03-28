@@ -1,0 +1,8 @@
+.filter-sidebar {
+    #category {
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
+        background: transparent url("./down-arrow.svg") no-repeat right;
+    }
+}
