@@ -1,4 +1,4 @@
-import FilterSideBar from '../FilterSideBar/FilerSideBar';
+import FilterSideBar from '../FilterSideBar/FilterSideBar';
 
 const Sidebars = () => {
     return (

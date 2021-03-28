@@ -1,0 +1,14 @@
+.single-product {
+    min-height: 300px;
+
+    .image-contents {
+        position: relative;
+
+        .product-metadata {
+            width: 100%;
+            position: absolute;
+            top: .5rem;
+            padding: 0 .6rem;
+        }
+    }
+}

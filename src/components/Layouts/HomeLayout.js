@@ -1,4 +1,6 @@
 import Sidebars from '../Sidebars/Sidebars';
+import Products from '../Products/Products';
+import './HomeLayout.scss';
 
 const HomeLayout = () => {
     return (
@@ -6,7 +8,11 @@ const HomeLayout = () => {
             {/* Sidebar Components */}
             <Sidebars />
 
-            {/* Products List Component */}
+            {/* Products List Container */}
+            <div className="main-content w-73p text-gray-700">
+                {/* Products */}
+                <Products />
+            </div>
         </div>
     );
 }
