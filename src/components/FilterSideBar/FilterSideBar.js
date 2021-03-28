@@ -1,13 +1,12 @@
-import { useState } from 'react';
 import './FilterSideBar.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { showFilter, hideFilter } from '../../actions';
+import { hideFilter } from '../../actions';
 
 const mobileVisibleStyles = {
     display: 'block',
     position: 'absolute',
     bottom: 0,
-    height: '85%',
+    height: '98%',
     width: '100%',
     zIndex: 50,
 }
@@ -21,6 +20,8 @@ const FilterSideBar = (props) => {
     
     const handleToggleFilter = () => {
         if (toggleFilter.mobileFilterVisible) {
+            // unfreeze body to enable scrolling.
+            document.body.style.position = 'static';
             dispatch(hideFilter());
         }
     }
