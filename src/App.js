@@ -1,13 +1,12 @@
-import React from 'react';
 import Header from './components/Header/Header';
 import MainLayout from './components/Layouts/MainLayout';
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="bg-white md:bg-gray-50">
       <Header />
       <MainLayout />
-    </React.Fragment>
+    </div>
   );
 }
 

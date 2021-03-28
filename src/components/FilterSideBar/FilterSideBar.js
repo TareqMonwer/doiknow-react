@@ -4,10 +4,10 @@ const FilterSideBar = () => {
             <div className="flex justify-between pb-3 border-b border-gray-100">
                 <span className="text-gray-500 uppercase">
                     filters
-                        </span>
+                </span>
                 <button className="text-yellow-500 uppercase">
                     reset
-                        </button>
+                </button>
             </div>
 
             <div className="sidebar-title font-semibold py-2">
