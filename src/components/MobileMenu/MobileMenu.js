@@ -8,7 +8,7 @@ import {
 
 const MobileMenu = () => {
     return (
-        <div className="w-full p-5 flex items-center justify-between bg-white sm:hidden">
+        <div className="w-full sticky top-0 z-50 p-5 flex items-center justify-between bg-white sm:hidden">
             <div className="menuToggler">
                 <FontAwesomeIcon icon={faBars} />
             </div>
