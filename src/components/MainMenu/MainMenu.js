@@ -2,8 +2,8 @@ import './MainMenu.scss';
 
 const MainMenu = () => {
     return (
-        <div className="main-menu w-full p-2 border-b border-gray shadow-md">
-            <div className="flex items-center justify-between w-3/4 ml-auto mr-8">
+        <div className="main-menu w-full py-3 px-5 md:px-2 bg-white border-b border-gray shadow-md">
+            <div className="flex items-center justify-between w-3/4 md:ml-auto md:mr-8">
                 <div className="left-menu flex">
                     <div className="menu-item">
                         <a href="#todo">
@@ -21,7 +21,7 @@ const MainMenu = () => {
                             </a>
                     </div>
                 </div>
-                <div className="right-menu flex">
+                <div className="right-menu hidden md:flex md:block">
                     <div className="menu-item">
                         <a href="#todo">
                             Outlets

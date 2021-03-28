@@ -10,7 +10,7 @@ import './SocailMenu.scss';
 
 const SocialMenu = () => {
     return (
-        <div class="social-menu w-full py-2
+        <div class="hidden sm:block social-menu w-full p-2 sm:px-0
             bg-gray-900 text-white shadow-xs">
             <div className="container mx-auto flex flex-row items-center justify-between">
                 <div className="contact-items flex">
