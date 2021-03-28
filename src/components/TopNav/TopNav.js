@@ -9,21 +9,21 @@ import './TopNav.scss';
 
 const TopNav = () => {
     return (
-        <div class="top-nav w-full px-5 sm:p-2 sm:px-0 bg-white shadow-xs
+        <div className="top-nav w-full px-5 sm:p-2 sm:px-0 bg-white shadow-xs
             sm:border-b sm:border-gray-300">
             <div className="container mx-auto flex flex-row items-center justify-between">
-                <div class="h-12 hidden md:flex">
+                <div className="h-12 hidden md:flex">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/DPI-logo.png" alt=""
                     className="h-full" />
                 </div>
-                <span class="w-full md:w-1/3 h-10 cursor-pointer border border-gray-300 
+                <span className="w-full md:w-1/3 h-10 cursor-pointer border border-gray-300 
                     text-sm rounded-md flex">
-                    <input type="search" name="serch" placeholder="Search now" class="flex-grow px-4 text-sm rounded-l-md focus:outline-none" />
+                    <input type="search" name="serch" placeholder="Search now" className="flex-grow px-4 text-sm rounded-l-md focus:outline-none" />
                     <button type="submit" className="bg-indigo-900 text-white px-5 py-2 rounded-r-md">
                         <FontAwesomeIcon icon={faSearch} />
                     </button>
                 </span>
-                <div class="flex items-center hidden md:flex">
+                <div className="flex items-center hidden md:flex">
                     <div className="menu-item">
                         <a href="#todo">
                             <span className="menu-icon">

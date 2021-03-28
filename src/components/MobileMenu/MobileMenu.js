@@ -15,7 +15,7 @@ const MobileMenu = () => {
             <div className="logo h-12">
                 <a href="#todo">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/DPI-logo.png" alt=""
-                    class="h-full" />
+                    className="h-full" />
                 </a>
             </div>
             <div className="user-actions-menu flex">
