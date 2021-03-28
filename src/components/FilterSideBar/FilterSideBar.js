@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { showFilter, hideFilter } from '../../actions';
 
 const mobileVisibleStyles = {
+    display: 'block',
     position: 'absolute',
     bottom: 0,
     height: '85%',
@@ -25,11 +26,10 @@ const FilterSideBar = (props) => {
     }
 
     return (
-        <div className={`filter-sidebar filter-sidebar bg-white p-4 border border-gray-100 shadow-md
-            ${toggleFilter.mobileFilterVisible ? '' : 'hidden'} md:block`}
+        <div className="filter-sidebar filter-sidebar bg-white p-4 border border-gray-100 shadow-md hidden md:block"
             style={
                 toggleFilter.mobileFilterVisible ?
-                    mobileVisibleStyles : { display: 'inherit' }
+                    mobileVisibleStyles : { display: 'none' }
             }    
         >
             <div className="flex justify-between pb-3 border-b border-gray-100">
